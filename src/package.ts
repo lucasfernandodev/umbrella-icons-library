@@ -6,6 +6,7 @@ const packageEnd = path.resolve(
   "package/umbrella-icons-library/" + "package.json"
 );
 
+// Read File
 fs.readFile(packageEntry, "utf8", (err, jsonString) => {
   if (err) {
     console.log("Error reading file from disk:", err);
