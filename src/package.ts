@@ -14,6 +14,13 @@ fs.readFile(packageEntry, "utf8", (err, jsonString) => {
   try {
     const packageJSON = JSON.parse(jsonString);
     packageJSON.scripts = {};
+    packageJSON.devDependencies = {
+      "react": packageJSON.devDependencies["react"],
+      "@types/react": packageJSON.devDependencies["@types/react"],
+      "typescript": packageJSON.devDependencies["typescript"],
+    }
+
+    // Write File
     const json = JSON.stringify(packageJSON);
 
     fs.writeFile(packageEnd, json, (err) => {
