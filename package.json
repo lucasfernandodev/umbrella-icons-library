@@ -1,26 +1,23 @@
 {
   "name": "umbrella-icons",
-  "author": "Lucas Fernando",
-  "license": "MIT",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "description": "A simple icon library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
-
-  "homepage": "https://github.com/lucasfernandodev/umbrella-icons#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lucasfernandodev/umbrella-icons.git"
-  },
-  "bugs": {
-    "url": "https://github.com/lucasfernandodev/umbrella-icons/issues"
+    "url": "git+https://github.com/lucasfernandodev/umbrella-icons.git"
   },
   "keywords": [
     "icons",
-    "svg",
-    "react"
-  ]
+    "svg"
+  ],
+  "author": "Lucas Fernando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasfernandodev/umbrella-icons/issues"
+  },
+  "homepage": "https://github.com/lucasfernandodev/umbrella-icons#readme"
 }
