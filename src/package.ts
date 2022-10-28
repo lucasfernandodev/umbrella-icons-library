@@ -21,6 +21,8 @@ fs.readFile(packageEntry, "utf8", (err, jsonString) => {
       "typescript": packageJSON.devDependencies["typescript"],
     }
 
+    packageJSON.dependencies = undefined;
+
     // Write File
     const json = JSON.stringify(packageJSON);
 
