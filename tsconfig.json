@@ -1,0 +1,16 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "NodeNext",
+      "esModuleInterop": true,
+    },
+    "esm": true
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "exclude": ["package", "__tests__"]
+}

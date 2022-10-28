@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "outDir": "package/umbrella-icons-library/react"
+  },
+  "include": [
+    "package/umbrella-icons-library/components/*.ts",
+    "package/umbrella-icons-library/components/*.tsx"
+  ],
+  "exclude": ["src", "node_modules", "package/umbrella-icons-library/react", "__tests__"]
+}
