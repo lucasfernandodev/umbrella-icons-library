@@ -4,7 +4,7 @@
   "description": "A simple icon library",
   "main": "package/umbrella-icons-library/react/index.js",
   "scripts": {
-    "postversion": "ts-node ./src/package.ts",
+    "postversion": "ts-node ./src/package.ts && cp README.md ./package/umbrella-icons-library/",
     "clean": "rimraf umbrella-icons-library *.tgz",
     "test": "jest --detectOpenHandles  --no-cache",
     "export": "ts-node ./node_modules/@figma-export/cli/bin/run use-config ./src/.figma.config.ts",
