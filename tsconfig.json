@@ -6,7 +6,7 @@
       "moduleResolution": "NodeNext",
       "esModuleInterop": true,
     },
-    "esm": true
+    "esm": true,
   },
   "compilerOptions": {
     "esModuleInterop": true,

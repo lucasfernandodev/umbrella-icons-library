@@ -1,0 +1,1 @@
+export * from './package/umbrella-icons-library/components';
