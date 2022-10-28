@@ -37,7 +37,6 @@
     "@figma-export/output-components-as-svgr": "^4.5.0",
     "@figma-export/transform-svg-with-svgo": "^4.5.0",
     "@figma-export/types": "^4.5.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
     "@types/node": "^18.11.7",
     "@types/react": "^18.0.24",
