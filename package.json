@@ -6,7 +6,7 @@
   "scripts": {
     "postversion": "ts-node ./src/package.ts",
     "clean": "rimraf umbrella-icons-library *.tgz",
-    "test": "jest --force-exit --detectOpenHandles  --no-cache",
+    "test": "jest --detectOpenHandles  --no-cache",
     "export": "ts-node ./node_modules/@figma-export/cli/bin/run use-config ./src/.figma.config.ts",
     "bundle": "rollup --config --bundleConfigAsCjs",
     "build": "run-s clean export bundle",

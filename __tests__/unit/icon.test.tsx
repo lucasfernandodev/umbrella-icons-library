@@ -1,6 +1,7 @@
 import React from 'react'
 import {render,screen} from '@testing-library/react'
 import App from './react/app'
+import '@testing-library/jest-dom'
 
 describe("Testa os icons components", () => {
 
