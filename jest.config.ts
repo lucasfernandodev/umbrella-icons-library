@@ -10,9 +10,14 @@ module.exports = {
   transformIgnorePatterns: [
     "node_modules"
   ],
-  modulePathIgnorePatterns: ["__tests__/unit/react", "node_modules"],
+  modulePathIgnorePatterns: ["__tests__/package/unit/react", "node_modules"],
   testMatch: [
-    "**/__tests__/unit/*.test.ts",
-    "**/__tests__/unit/*.test.tsx"
-  ]
+    "**/__tests__/package/unit/*.test.ts",
+    "**/__tests__/package/unit/*.test.tsx",
+    "**/__tests__/server/unit/*.test.ts",
+    "**/__tests__/server/unit/*.test.tsx",
+  ],
+  "transform": {
+    "^.+\\.js?$": "babel-jest"
+  }
 };
