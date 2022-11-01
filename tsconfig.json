@@ -11,6 +11,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "module": "ES6",
+    "moduleResolution": "node"
   },
   "exclude": ["package", "__tests__"]
 }

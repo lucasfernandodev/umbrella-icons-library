@@ -11,7 +11,7 @@ export const outputters = [
     },
     getComponentName: ({ componentName }: { componentName: string }) =>
       getFilename(componentName),
-    getSvgrConfig: () => ({ typescript: true }),
+    getSvgrConfig: () => ({ typescript: true, ref: true }),
     getExportTemplate: (options) => {
       const filename = getFilename(options.basename);
       return `export { default as ${filename} } from './${filename}';`;
