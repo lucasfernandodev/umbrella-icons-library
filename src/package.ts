@@ -17,6 +17,7 @@ fs.readFile(packageEntry, "utf8", (err, jsonString) => {
     const packageJSON = JSON.parse(jsonString);
     packageJSON.scripts = {};
     packageJSON.main = 'react/index.js';
+    packageJSON.type = 'module';
     packageJSON.devDependencies = {
       "react": packageJSON.devDependencies["react"],
       "@types/react": packageJSON.devDependencies["@types/react"],

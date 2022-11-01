@@ -4,7 +4,7 @@
 /node_modules
 
 # build
-/package
+/package/umbrella-icons-library
 
 # misc
 .DS_Store

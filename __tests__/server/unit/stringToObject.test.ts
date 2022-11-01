@@ -1,4 +1,4 @@
-import { stringToObject } from "../../src/utils/stringToObject"
+import { stringToObject } from "../../../src/utils/stringToObject"
 
 describe('#stringToObject', () => {
 

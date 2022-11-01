@@ -5,11 +5,12 @@
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "outDir": "package/umbrella-icons-library/react"
+    "outDir": "package/umbrella-icons-library/react",
+    "esModuleInterop": true
   },
   "include": [
     "package/umbrella-icons-library/components/*.ts",
-    "package/umbrella-icons-library/components/*.tsx",
+    "package/umbrella-icons-library/components/*.tsx"
   ],
   "exclude": ["src","node_modules", "package/umbrella-icons-library/react", "__tests__"]
 }

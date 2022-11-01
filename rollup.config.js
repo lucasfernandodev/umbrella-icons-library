@@ -5,7 +5,7 @@ const config = [
     input: "./index.js",
     output: {
       dir: "./package/umbrella-icons-library/react",
-      format: "module",
+      format: "es",
     },
     external: ['react'],
     plugins: [typescript({

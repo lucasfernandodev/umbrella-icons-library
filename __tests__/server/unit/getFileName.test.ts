@@ -1,4 +1,4 @@
-import { getFilename } from "../../src/services/figma-exports/getFileName";
+import { getFilename } from "../../../src/services/figma-exports/getFileName";
 
 describe('#getFilename', () => {
 
