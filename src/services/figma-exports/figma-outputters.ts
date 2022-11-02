@@ -19,7 +19,7 @@ export const outputters = [
     }),
     getExportTemplate: (options) => {
       const filename = getFilename(options.basename);
-      return `export { ReactComponent as ${filename} } from './${filename}';`;
+      return `export { ${filename} } from './${filename}';`;
     },
 
     getDirname: () => "components",
