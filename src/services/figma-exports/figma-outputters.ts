@@ -1,7 +1,7 @@
 import outputWithSVGR from "@figma-export/output-components-as-svgr";
 import { getFilename } from "./getFileName";
 import OutputSvgFile from "@figma-export/output-components-as-svg";
-
+import { template } from "../../utils/svgrTemplate";
 const outputPath = "./package/umbrella-icons-library";
 
 export const outputters = [
@@ -11,10 +11,15 @@ export const outputters = [
     },
     getComponentName: ({ componentName }: { componentName: string }) =>
       getFilename(componentName),
-    getSvgrConfig: () => ({ typescript: true, ref: true }),
+    getSvgrConfig: () => ({
+      typescript: true,
+      ref: true,
+      template: template,
+      exportType: "named"
+    }),
     getExportTemplate: (options) => {
       const filename = getFilename(options.basename);
-      return `export { default as ${filename} } from './${filename}';`;
+      return `export { ReactComponent as ${filename} } from './${filename}';`;
     },
 
     getDirname: () => "components",
