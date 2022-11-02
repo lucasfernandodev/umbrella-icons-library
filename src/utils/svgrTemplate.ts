@@ -1,5 +1,4 @@
 export const template = (variables, { tpl }) => {
-
   return tpl`
     ${variables.imports};
 
@@ -12,6 +11,7 @@ export const template = (variables, { tpl }) => {
       ${variables.jsx}
     );
     
-    ${variables.exports};
+    const ForwardRef = forwardRef(${variables.componentName});
+    export { ForwardRef as ${variables.componentName} };
   `;
 };  
