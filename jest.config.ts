@@ -19,5 +19,6 @@ module.exports = {
   ],
   "transform": {
     "^.+\\.js?$": "babel-jest"
-  }
+  },
+  "roots": ["__tests__"]
 };
