@@ -15,7 +15,7 @@ export const outputters = [
       typescript: true,
       ref: true,
       template: template,
-      exportType: "named"
+      exportType: "named",
     }),
     getExportTemplate: (options) => {
       const filename = getFilename(options.basename);
