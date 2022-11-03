@@ -1,6 +1,6 @@
 {
   "name": "umbrella-icons-library",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple icon library",
   "main": "package/umbrella-icons-library/react/index.js",
   "scripts": {
